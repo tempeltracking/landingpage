@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TempTrack | Tempel Tracking/title>
+    <title>TempTrack</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -34,7 +34,7 @@
         <section x-data="{ mobileNavOpen: false }" class="overflow-hidden">
           <div
             :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}"
-            class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 fixed top-0 left-0 w-full z-50 bg-transparent shadow-md"
+            class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50"
           >
             <div
               x-on:click="mobileNavOpen = !mobileNavOpen"
@@ -120,9 +120,8 @@
 
         <section x-data="{ mobileNavOpen: false }">
           <div class="container mx-auto overflow-hidden">
-            <!-- Fixed Navbar Container -->
             <div
-              class="relative z-20 flex items-center justify-between px-4 py-5 bg-transparent fixed top-0 left-0 w-full"
+              class="relative z-20 flex items-center justify-between px-4 py-5 bg-transparent"
             >
               <div class="w-auto">
                 <div class="flex flex-wrap items-center">
@@ -191,8 +190,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Mobile Menu -->
             <div
               :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}"
               class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50"
@@ -278,9 +275,7 @@
               </nav>
             </div>
           </div>
-
-          <!-- Main Content Below Navbar -->
-          <div class="overflow-hidden pb-16 pt-20">
+          <div class="overflow-hidden pb-16">
             <div class="container px-4 mx-auto">
               <div
                 class="mb-16 relative bg-indigo-50 overflow-hidden rounded-3xl"
@@ -295,11 +290,11 @@
                     <h2
                       class="mb-7 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none"
                     >
-                      Temptrack (Tempel Tracking) Akselerasi Bisnis
+                      Temptrack (Tempel Tracking) Akselerasi Bisnis 
                     </h2>
                     <p class="mb-10 text-lg text-gray-900 font-medium">
-                      Pantau Pengiriman Anda, Dimana Saja, Kapan Saja,
-                      Pengiriman Cepat, Aman, dan Mudah Dilacak
+                      Pantau Pengiriman Anda, Dimana Saja, Kapan
+                      Saja, Pengiriman Cepat, Aman, dan Mudah Dilacak
                     </p>
                     <div class="mb-6 md:inline-block">
                       <button
